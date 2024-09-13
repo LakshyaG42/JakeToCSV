@@ -2,14 +2,8 @@ import re
 import csv
 
 data = """
-9/11/24
-    Pearson [ jaketduffy@comcast.net ] -> UNDER REVIEW (as of 9/11)
-    Westfield [ jaketduffy@comcast.net ] -> UNDER REVIEW (as of 9/11)
-    Wayfair [ jaketduffy@comcast.net ] -> UNDER REVIEW (as of 9/11) 
-9/6/24
-    Spectrum [ jaketduffy@comcast.net; eh73HU82H61$hi789 ] -> UNDER REVIEW (as of 9/11)
-"""
 
+"""
 datePattern = r'(\d{1,2}/\d{1,2}/\d{2})'
 
 companyPattern = r'\s*([\w\s]+)\s+\[\s*([\w@.]+)(?:;\s*([\w$]+))?\s*\]\s*->\s*([\w\s]+)'
