@@ -5,7 +5,8 @@ data = """
 
 """
 datePattern = r'(\d{1,2}/\d{1,2}/\d{2})'
-companyPattern = r'\s*([\w\s]+)\s+\[\s*([\w@.]+)(?:;\s*([\w$]+))?\s*\]\s*->\s*([\w\s]+)'
+companyPattern = r'\s*([\w\s]+)\s+\[\s*([\w@.]+)(?:\s*;\s*([\w$]+))?\s*\]\s*->\s*([\w\s]+)'
+
 results = []
 lines = data.splitlines()
 currDate = None 
